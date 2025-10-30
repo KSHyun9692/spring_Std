@@ -1,0 +1,24 @@
+package com.hello.hello_spring;
+
+import com.hello.hello_spring.repository.MemberRepository;
+import com.hello.hello_spring.repository.MemoryMemberRepository;
+import com.hello.hello_spring.service.MemberService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+//Configuration을 통해 java로 직접 bean 주입
+//@Configuration
+//public class SpringConfig {
+//
+//    @Bean
+//    public MemberService memberService() {
+//
+//        return new MemberService(memberRepository());
+//    }
+//
+//    @Bean
+//    public MemberRepository memberRepository() {
+//
+//        return new MemoryMemberRepository();
+//    }
+//}
