@@ -21,8 +21,16 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    //implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'com.h2database:h2'
+
+    // Apache POI Core (필수)
+    implementation 'org.apache.poi:poi:5.2.5'
+
+    // Apache POI OOXML (Excel .xlsx 파일 처리를 위해 필수)
+    implementation 'org.apache.poi:poi-ooxml:5.2.5'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
